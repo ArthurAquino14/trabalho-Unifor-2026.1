@@ -4,22 +4,23 @@ let velocidadeRegistrada = prompt("Velocidade registrada pelo veículo: ").toLow
 velocidadeMáxima = parseInt(velocidadeMáxima);
 velocidadeRegistrada = parseInt(velocidadeRegistrada);
 let excessoDeVelocidade = velocidadeMáxima-velocidadeRegistrada;
+let excesso = velocidadeRegistrada - velocidadeMáxima;
 if(velocidadeRegistrada <=velocidadeMáxima){
     console.log("Motorista dentro do limite de velocidade");
 }
-if(velocidadeRegistrada <= velocidadeMáxima+1 && velocidadeRegistrada >= velocidadeMáxima+10){
+if(excesso >= 1 && excesso <= 10){
     console.log(nome);
     console.log("A velocidade máxima da via era",velocidadeMáxima);
     console.log("A velocidade do veículo foi",velocidadeRegistrada);
     console.log("É uma multaLeve com penalidade de R$50");
 }
-if(velocidadeRegistrada > velocidadeMáxima+10 ){
+if(excesso >10 && excesso <= 20){
     console.log(nome);
     console.log("A velocidade máxima da via era",velocidadeMáxima);
     console.log("A velocidade do veículo foi",velocidadeRegistrada);
     console.log("É uma multa média com penalidade de R$100");
 } 
-if(velocidadeRegistrada >= velocidadeMáxima+20 ){
+if(excesso > 20){
     console.log(nome);
     console.log("A velocidade máxima da via era",velocidadeMáxima);
     console.log("A velocidade do veículo foi",velocidadeRegistrada);
