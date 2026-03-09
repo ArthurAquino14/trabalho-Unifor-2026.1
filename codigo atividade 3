@@ -3,7 +3,6 @@ let velocidadeMáxima = prompt("Velocidade Máxima permitido na via: ");
 let velocidadeRegistrada = prompt("Velocidade registrada pelo veículo: ");
 velocidadeMáxima = parseInt(velocidadeMáxima);
 velocidadeRegistrada = parseInt(velocidadeRegistrada);
-let excessoDeVelocidade = velocidadeMáxima-velocidadeRegistrada;
 let excesso = velocidadeRegistrada - velocidadeMáxima;
 if(velocidadeRegistrada <=velocidadeMáxima){
     console.log("Motorista dentro do limite de velocidade");
