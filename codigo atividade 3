@@ -1,6 +1,6 @@
 let nome = prompt("Digite o nome: ").toLowerCase();
-let velocidadeMáxima = prompt("Velocidade Máxima permitido na via: ").toLowerCase();
-let velocidadeRegistrada = prompt("Velocidade registrada pelo veículo: ").toLowerCase();
+let velocidadeMáxima = prompt("Velocidade Máxima permitido na via: ");
+let velocidadeRegistrada = prompt("Velocidade registrada pelo veículo: ");
 velocidadeMáxima = parseInt(velocidadeMáxima);
 velocidadeRegistrada = parseInt(velocidadeRegistrada);
 let excessoDeVelocidade = velocidadeMáxima-velocidadeRegistrada;
