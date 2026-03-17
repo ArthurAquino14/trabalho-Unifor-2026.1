@@ -1,1 +1,48 @@
-
+let nome = prompt("Nome do correntista: ");
+let tipo = prompt("Digite o tipo de conta (1 - Conta Corrente, 2 - Conta Poupança, 3 - Conta Salário): ");
+let operação = prompt("Qual a operação desejada?(1 - Saque, 2 - Depósito, 3 - Consultar Saldo): ");
+let saldo = prompt ("Digite o saldo disponível na sua conta: ");
+let valor = prompt("Qual o valor da operação desejada ?: ");
+tipo = parseInt(tipo);
+operação = parseInt(operação);
+saldo = parseFloat(saldo);
+valor = parseFloat(valor);
+let limite_conta_corrente;
+let limite_conta_poupança;
+let limite_conta_salário;
+let saque;
+let depósito;
+let consultar_saldo;
+switch(tipo){
+    case 1:
+     limite_conta_corrente = 3000;
+        break;
+    case 2:
+     limite_conta_poupança = 1500;
+        break;
+    case 3:
+     limite_conta_salário = 2000;
+        break;
+    default:
+      console.log("Tipo de conta inválido");
+    break;
+}
+switch(operação){
+    case 1:
+        saque
+    case 2:
+        depósito
+    case 3:
+        consultar_saldo
+    default:
+      console.log("Operação inválida");
+    break;
+}
+switch(true){
+   case saque>limite_conta_corrente:
+       console.log("Saque negado --- valor acima do limite diário.");
+       break;
+   case saque>saldo:
+       console.log("Saque negado --- saldo insuficiente.");
+       break;
+}
