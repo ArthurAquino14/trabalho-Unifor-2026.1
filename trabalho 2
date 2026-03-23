@@ -1,8 +1,12 @@
 let nome = prompt("Nome do correntista: ");
-let tipo = parseInt(prompt("Digite o tipo de conta (1 - Conta Corrente, 2 - Conta Poupança, 3 - Conta Salário): "));
-let operacao = parseInt(prompt("Qual a operação desejada?(1 - Saque, 2 - Depósito, 3 - Consultar Saldo): "));
-let saldo = parseFloat(prompt("Digite o saldo disponível na sua conta: "));
-let valor = parseFloat(prompt("Qual o valor da operação desejada ?: "));
+let tipo = prompt("Digite o tipo de conta (1 - Conta Corrente, 2 - Conta Poupança, 3 - Conta Salário): ");
+let operacao = prompt("Qual a operação desejada?(1 - Saque, 2 - Depósito, 3 - Consultar Saldo): ");
+let saldo = prompt("Digite o saldo disponível na sua conta: ");
+let valor = prompt("Qual o valor da operação desejada ?: ");
+tipo = parseInt(tipo);
+operacao =parseInt(operacao);
+saldo = paseFloat(saldo);
+valor =parseFloat(valor);
 
 let limite;
 let nomeOperacao;
