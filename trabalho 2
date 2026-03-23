@@ -5,7 +5,7 @@ let saldo = prompt("Digite o saldo disponível na sua conta: ");
 let valor = prompt("Qual o valor da operação desejada ?: ");
 tipo = parseInt(tipo);
 operacao =parseInt(operacao);
-saldo = paseFloat(saldo);
+saldo = parseFloat(saldo);
 valor =parseFloat(valor);
 
 let limite;
@@ -24,7 +24,7 @@ switch(tipo){
         break;
     default:
         console.log("Tipo de conta inválido.");
-        return;
+        break;
 }
 
 // Nome da operação
@@ -40,7 +40,7 @@ switch(operacao){
         break;
     default:
         console.log("Operação inválida.");
-        return;
+        break;
 }
 
 // Processamento
