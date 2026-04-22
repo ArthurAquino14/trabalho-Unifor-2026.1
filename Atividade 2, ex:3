@@ -1,1 +1,39 @@
-
+let saldo = 1000;
+let escolha;
+let valor;
+let operações = -1;
+while(escolha != 0) {
+console.log("==MENU==");
+console.log("1 - Depositar");
+console.log("2 - Sacar");
+console.log("3 - Consultar saldo");
+console.log("0 - Sair");
+escolha = parseInt(prompt("Escolha: "));
+operações++;
+ switch(escolha){
+ case 1:
+    valor = parseInt(prompt("Quanto deseja depositar?: "));
+    saldo += valor;
+    console.log("Valor do deposito:",valor);
+    console.log("Deposito realizado, saldo: R$"+saldo);
+    break;
+ case 2:
+     valor = parseInt(prompt("Quanto deseja sacar?: "));
+     console.log("Valor do saque:",valor);
+     if(valor<=saldo){
+     saldo -= valor;
+     console.log("Saque realizado, saldo: R$"+saldo);
+     }else{
+         console.log("Saque negado, saldo insuficiente");
+     }
+    break;
+ case 3:
+     console.log("Saldo atual:"+saldo);
+     break;
+ default:
+ console.log("Operação invalida");
+ break;
+  }
+}
+console.log("Saldo final: R$"+saldo);
+console.log("você realizou",operações,"operações");
