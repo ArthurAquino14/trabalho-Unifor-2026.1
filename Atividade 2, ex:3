@@ -30,6 +30,9 @@ operações++;
  case 3:
      console.log("Saldo atual:"+saldo);
      break;
+ case 0:
+     console.log("Você saiu");
+     break;
  default:
  console.log("Operação invalida");
  break;
